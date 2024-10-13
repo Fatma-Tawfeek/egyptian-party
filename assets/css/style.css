@@ -1,0 +1,150 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgba(214, 46, 51, 0.4);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.6rem;
+}
+
+/******* Hero Section *******/
+
+.hero-section {
+    height: 100vh;
+    background-image: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)),
+        url(../images/events-heavenly-header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.sidenav {
+    position: fixed;
+    width: 0;
+    padding-inline: 2rem;
+    padding-top: 8rem;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    z-index: 999;
+    display: none;
+}
+
+.open-btn {
+    position: absolute;
+    top: 50%;
+    left: 1%;
+    cursor: pointer;
+    color: #fff;
+    transition: right 0.5s ease;
+}
+
+.close-btn {
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    cursor: pointer;
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidenav a:hover {
+    color: var(--primary-color);
+}
+
+/******* Singers Section *******/
+
+.singer-title {
+    background-color: var(--primary-color);
+}
+
+.singer-body {
+    background-color: #ccc;
+    color: #000;
+    display: none;
+}
+
+/******* Count down Section *******/
+
+.countdown-section {
+    background-image: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)),
+        url(../images/invitation-2508607__340.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/******* Contact Section *******/
+
+.contact-section p,
+.contact-section li {
+    color: #777;
+}
+
+.contact-section h2,
+.contact-section h3 {
+    color: #444;
+}
+
+.email a {
+    color: #d62e33 !important;
+    text-decoration: none;
+}
+
+.contact-section .social-icons li a {
+    text-decoration: none;
+    color: #777;
+    border: 1px solid #999;
+    padding: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-section .social-icons li a:hover {
+    color: #fff;
+    background-color: #d62e33;
+    border-color: #d62e33;
+}
+
+.contact-section .form-input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    font-size: 1.6rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+}
+
+.submit-btn {
+    display: block;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #d62e33;
+    border: 1px solid #d62e33;
+    transition: all 0.3s ease-in-out;
+}
+
+#remaining {
+    color: #d62e33;
+    font-size: 2rem;
+}
